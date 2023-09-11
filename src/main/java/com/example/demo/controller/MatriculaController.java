@@ -45,7 +45,7 @@ public class MatriculaController {
 	@GetMapping("/buscar")
 	public String buscar(Model model) {
 		List<MatriculaDTO> lista= this.matriculaService.buscarTodos();
-		model.addAttribute("lista",model);
+		model.addAttribute("lista",lista);
 		return "vistaListaMatriculas";
 	}
 
